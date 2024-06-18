@@ -1,0 +1,130 @@
+header, main, footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.posts {
+    max-width: 80%;
+    margin: 5% auto;
+}
+
+.titulo_postagem {
+    font-size: 32px;
+    margin: 3% auto;
+    font-weight: bold;
+}
+
+.texto {
+    text-align: justify;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.imagem_post {
+    margin-bottom: 5%;
+    max-width: 50%;
+}
+
+.sub_titulo_postagem {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.referencias {
+    text-align: start;
+    margin-top: 5%;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.comentarios h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 5%;
+}
+
+.comentarios {
+    text-align: end;
+}
+
+.txtArea_comentario {
+    border-radius: 10px;
+    padding: 2%;
+    text-align: justify;
+    min-height: 80px;
+    max-height: 100px;  
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.enviar_comentario {
+    min-width: 15%;
+    height: 40px;
+    background-color: #B1CAAC;
+    color: #000;
+    font-size: 16px;
+    font-weight: bolder;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.enviar_comentario:hover {
+    background-color: #6EA864;
+}
+
+.link_funcionalidades {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.editar_publicacao, .excluir_publicacao {
+    margin: auto 15%;
+    background-color: #000;
+    color: #fff;
+    padding: 1% 2%;
+    font-weight: bolder;
+    border-radius: 15px;
+    border: #fff solid 3px;
+}
+
+.editar_publicacao:hover {
+    background-color: #FFCC00;
+    color: #000;
+}
+
+.excluir_publicacao:hover {
+    background-color: #EC6433;
+    color: #000;
+}
+
+.titulo_comentarios_salvos {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 5%;
+    border-bottom: #333 dashed 1px;
+    width: 100%;
+}
+
+/* Classe adicionada com JS */
+.texto_comentario {
+    text-align: justify;
+    color: #000;
+    min-width: 80%;
+    background-color: #eee;
+    border: #5a5 solid 3px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
