@@ -27,14 +27,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 <body>
     <header class="header">
         <section class="logotipo">
-            <a href="index.html">
+            <a href="index.php">
                 <img class="logo_green" src="img/8679752_recycle_line_icon (1).png">
             </a>
         </section>
         <aside class="menu">
-            <a href="index.html"><?= $mensIndex["home"] ?></a>
-            <a href="view/publicar.html"><?= $mensIndex["publicar"]?></a>
-            <a href="view/quemSomos.html"><?= $mensIndex["sobreNos"]?></a>
+            <a href="index.php"><?= $mensIndex["home"] ?></a>
+            <a href="view/publicar.php"><?= $mensIndex["publicar"]?></a>
+            <a href="view/sobreNos.php"><?= $mensIndex["sobreNos"]?></a>
         </aside>
 
         <section class="icons">
@@ -62,7 +62,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <p class="texto">
                     <?= $mensIndex["texto_post1"]?>
                     </p>
-                    <a class="link_post" href="./view/leia.html"><?= $mensIndex["bt_leia-mais"]?></a>
+                    <a class="link_post" href="view/leia.php"><?= $mensIndex["bt_leia-mais"]?></a>
                 </div>
                 <div class="imagem" id="imagem">
                     <img class="imagem_post" src="img/reciclagem.png">
@@ -75,7 +75,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <h2 class="titulo"><?= $mensIndex["titulo_post2"]?></h2>
                     <p class="texto"><?= $mensIndex["texto_post2"]?>
                     </p>
-                    <a class="link_post" href="./view/leia.html"><?= $mensIndex["bt_leia-mais"]?></a>
+                    <a class="link_post" href="./view/leia.php"><?= $mensIndex["bt_leia-mais"]?></a>
                 </div>
                 <div class="imagem" id="imagem">
                     <img class="imagem_post" src="img/RSU.jpg">
@@ -89,7 +89,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                     <p class="texto">
                     <?= $mensIndex["texto_post3"]?>
                     </p>
-                    <a class="link_post" href="./view/leia.html"><?= $mensIndex["bt_leia-mais"]?></a>
+                    <a class="link_post" href="./view/leia.php"><?= $mensIndex["bt_leia-mais"]?></a>
                 </div>
                 <div class="imagem" id="imagem">
                     <img class="imagem_post" src="img/GR.jpg">

@@ -13,27 +13,10 @@
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Materialize Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- BootsTrap and Popper JS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
-    <!-- Materialize JS -->
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-
     <!-- myCSS -->
-    <link defer rel="stylesheet" type="text/css" href="../style/meuStyle.css">
+    <link defer rel="stylesheet" type="text/css" href="../style/geral.css">
     </link>
-    <link defer rel="stylesheet" type="text/css" href="../style/meuStyleQS.css">
+    <link defer rel="stylesheet" type="text/css" href="../style/sobreNos.css">
     </link>
 
     <!-- myJS -->
@@ -97,7 +80,7 @@
             <li class="nav-item"><a href="#" class="nav-link px-2">Gustavo S. Bragion</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Ian Pereira</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Jairo Ulloa</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Mágila M. S. Ferreira</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/magilamorgana/" class="nav-link px-2">Mágila M. S. Ferreira</a></li>
         </ul>
         <p class="text-center composição">© 2024 Projeto Integrador, FATEC</p>
     </footer>
