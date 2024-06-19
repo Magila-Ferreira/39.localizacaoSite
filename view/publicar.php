@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <!-- TESTE -->
+<?php
+include_once '../funcoes/idiomaView.php';
+?>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MdR</title>
+    <title><?= $mensPublicar["nome_pagina"] ?></title>
 
     <!-- BootsTrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,14 +28,14 @@
 <body>
     <header class="header">
         <section class="logotipo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img class="logo_green" src="../img/8679752_recycle_line_icon (1).png">
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.html"> HOME </a>
-            <a href="publicar.html"> PUBLISH </a>
-            <a href="quemSomos.html"> WHO WE ARE? </a>
+            <a href="../index.php"><?= $mensNavBar["home"] ?></a>
+            <a href="publicar.php"><?= $mensNavBar["publicar"]?></a>
+            <a href="sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->
@@ -50,7 +53,7 @@
 
     <main class="container">
         <h1 class="logo"> Waste management </h1>
-        <form id="publicacao" action="../index.html" method="post">
+        <form id="publicacao" action="../index.php" method="post">
             <h5 class="linha pb-3 mb-3"> Informations about the post</h5>
             <div class="cabeçalho_post">
                 <div class="campo_imagem">

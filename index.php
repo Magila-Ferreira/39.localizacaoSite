@@ -10,6 +10,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $mensIndex["nome_pagina"]; ?></title>
 
     <!-- BootsTrap CSS -->
@@ -32,9 +33,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             </a>
         </section>
         <aside class="menu">
-            <a href="index.php"><?= $mensIndex["home"] ?></a>
-            <a href="view/publicar.php"><?= $mensIndex["publicar"]?></a>
-            <a href="view/sobreNos.php"><?= $mensIndex["sobreNos"]?></a>
+            <a href="index.php"><?= $mensNavBar["home"] ?></a>
+            <a href="view/publicar.php"><?= $mensNavBar["publicar"]?></a>
+            <a href="view/sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
         </aside>
 
         <section class="icons">
@@ -105,7 +106,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
             <li class="nav-item"><a href="#" class="nav-link px-2">Jairo Ulloa</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Mágila M. S. Ferreira</a></li>
         </ul>
-        <p class="text-center composição"><?= $mensIndex["copyright"]?></p>
+        <p class="text-center composição"><?= $mensFooter["copyright"]?></p>
     </footer>
 </body>
 

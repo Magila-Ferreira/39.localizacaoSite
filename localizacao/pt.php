@@ -1,18 +1,21 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+// Geral
+$mensNavBar = [
+        "home" => "PÁGINA INICIAL",
+        "publicar" => "PUBLICAR",
+        "sobreNos" => "SOBRE NÓS"
+];
 
+$mensFooter = [
+        "copyright" => "© 2024 Projeto Integrador, FATEC",
+];
+
+// Index.php
 $mensIndex = [ 
         // Colocar em órdem alfabética para não se perder
             "bt_leia-mais"=> "LEIA MAIS",
-            "copyright" => "© 2024 Projeto Integrador, FATEC",
-            "home" => "PÁGINA INICIAL",
             "nome_pagina"=>"Manejo de Resíduos",
-            "publicar" => "PUBLICAR",
-            "sobreNos" => "SOBRE NÓS",            
             
             "texto_post1" => 
             "Aos poucos, temos percebido na mídia e nas redes sociais um aumento no comprometimento da sociedade, das empresas e das instituições em relação à preocupação com o meio ambiente. O crescimento populacional está diretamente ligado a esta manifestação, em que a urbanização traz consigo a geração desenfreada de resíduos. Com a tecnologia e o avanço da construção civil e da indústria farmacêutica, por exemplo, podemos observar uma mudança significativa nas composições, características e aumento da periculosidade dos resíduos sólidos utilizados nos cursos universitários. Este crescimento reflete a evolução dos padrões de consumo da população e a forma como são destinados os resíduos gerados nas universidades.",
@@ -35,4 +38,24 @@ $mensIndex = [
             "es"=> "Español",
             "en" => "English",
             "pt" => "Português"
-    ];
+];
+
+// Publicar.php
+$mensPublicar = [
+        "nome_pagina" => "Manejo de Resíduos - Publicar"
+];
+
+// SobreNos.php
+$mensSobreNos = [
+
+];
+
+// Leia.php
+$mensLeia = [
+
+];
+
+// Editar.php
+$mensEditar = [
+
+];

@@ -27,14 +27,14 @@
 <body>
     <header class="header">
         <section class="logotipo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img class="logo_green" src="../img/8679752_recycle_line_icon (1).png">
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.html"> HOME </a>
-            <a href="publicar.html"> PUBLISH </a>
-            <a href="quemSomos.html"> WHO WE ARE? </a>
+            <a href="../index.php"> HOME </a>
+            <a href="publicar.php"> PUBLISH </a>
+            <a href="quemSomos.php"> WHO WE ARE? </a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->
@@ -140,7 +140,7 @@
                 <p>meuresiduo@meuresiduo.com</p>
             </div>
             <div class="link_funcionalidades">
-                <a class="editar_publicacao" href="../view/editar.html"> EDIT POST</a>
+                <a class="editar_publicacao" href="../view/editar.php"> EDIT POST</a>
                 <a class="excluir_publicacao" href="#"> DELETAR POST </a>
             </div>
             <section>

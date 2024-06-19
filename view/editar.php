@@ -24,14 +24,14 @@
 <body>
     <header class="header">
         <section class="logotipo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img class="logo_green" src="../img/8679752_recycle_line_icon (1).png">
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.html"> HOME </a>
-            <a href="publicar.html"> PUBLISH </a>
-            <a href="quemSomos.html"> WHO WE ARE? </a>
+            <a href="../index.php"> HOME </a>
+            <a href="publicar.php"> PUBLISH </a>
+            <a href="quemSomos.php"> WHO WE ARE? </a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->
@@ -49,7 +49,7 @@
 
     <main class="container">
         <h1 class="logo"> Waste management </h1>
-        <form id="publicacao" action="../index.html" method="post">
+        <form id="publicacao" action="../index.php" method="post">
             <h5 class="linha pb-3 mb-3"> Informations about the post </h5>
             <div class="cabeçalho_post">
                 <div class="campo_imagem">

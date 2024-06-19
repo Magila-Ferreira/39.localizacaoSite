@@ -1,18 +1,21 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+// Geral
+$mensNavBar = [
+        "home" => "HOME",
+        "publicar" => "PUBLISH",
+        "sobreNos" => "ABOUT US", 
+];
 
+$mensFooter = [
+        "copyright" => "© 2024 Integrator Project, FATEC",
+];
+
+// Index.php
 $mensIndex = [
             // Colocar em órdem alfabética para não se perder
             "bt_leia-mais"=> "READ MORE",
-            "copyright" => "© 2024 Integrator Project, FATEC",
-            "home" => "HOME",
             "nome_pagina"=>"Waste management",
-            "publicar" => "PUBLISH",
-            "sobreNos" => "ABOUT US",            
             
             "texto_post1" => 
             "Little by little, we have been perceiving in the media and social networks an increase in the commitment of society, companies and institutions in relation to concern for the environment. Population growth is directly linked to this manifestation, in which urbanization brings with it the unbridled generation of waste. With technology and the advancement of civil construction and the pharmaceutical industry, for example, we can observe a significant change in the compositions, characteristics and increase in the hazardousness of solid waste used in university courses. This growth reflects the development of the population's consumption patterns and the way in which the waste generated in universities is disposed of.",
@@ -35,4 +38,24 @@ $mensIndex = [
             "es"=> "Español",
             "en" => "English",
             "pt" => "Português"
+];
+
+// Publicar.php
+$mensPublicar = [
+        "nome_pagina" => "Waste management - Publish"
     ];
+    
+// SobreNos.php
+$mensSobreNos = [
+    
+    ];
+    
+// Leia.php
+$mensLeia = [
+    
+    ];
+  
+// Editar.php
+$mensEditar = [
+            
+];
