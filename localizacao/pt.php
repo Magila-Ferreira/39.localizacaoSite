@@ -1,17 +1,16 @@
 <?php
 
-// Geral
+// Geral -- por componente
 $mensNavBar = [
         "home" => "PÁGINA INICIAL",
         "publicar" => "PUBLICAR",
         "sobreNos" => "SOBRE NÓS"
 ];
-
 $mensFooter = [
         "copyright" => "© 2024 Projeto Integrador, FATEC",
 ];
 
-// Index.php
+// Index.php -- por página
 $mensIndex = [ 
         // Colocar em órdem alfabética para não se perder
             "bt_leia-mais"=> "LEIA MAIS",
@@ -40,7 +39,7 @@ $mensIndex = [
             "pt" => "Português"
 ];
 
-// Publicar.php
+// Publicar.php -- por página
 $mensPublicar = [
         "nome_pagina" => "Manejo de Resíduos - Publicar"
 ];
