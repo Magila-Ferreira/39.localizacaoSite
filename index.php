@@ -1,4 +1,5 @@
-<!DOCTYPE html lang="pt-BR">
+<!DOCTYPE html>
+
 <?php
 include_once './funcoes/idioma.php';
 ?>
@@ -6,8 +7,7 @@ include_once './funcoes/idioma.php';
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
 -->
-<html>
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

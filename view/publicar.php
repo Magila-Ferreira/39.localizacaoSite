@@ -22,7 +22,6 @@ include_once '../funcoes/idiomaView.php';
     </link>
     <link defer rel="stylesheet" type="text/css" href="../style/publicar.css">
     </link>
-
 </head>
 
 <body>
