@@ -3,10 +3,7 @@
 <?php
 include_once './funcoes/idioma.php';
 ?>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edit this template
--->
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
