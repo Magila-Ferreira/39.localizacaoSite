@@ -4,7 +4,8 @@
 $mensNavBar = [
         "home" => "PÁGINA INICIAL",
         "publicar" => "PUBLICAR",
-        "sobreNos" => "SOBRE NÓS"
+        "sobreNos" => "SOBRE NÓS",
+        "nome_pagina" => "Manejo de Resíduos"
 ];
 $mensFooter = [
         "copyright" => "© 2024 Projeto Integrador, FATEC",
@@ -14,7 +15,7 @@ $mensFooter = [
 $mensIndex = [ 
         // Colocar em órdem alfabética para não se perder
             "bt_leia-mais"=> "LEIA MAIS",
-            "nome_pagina"=>"Manejo de Resíduos",
+            "titulo_pagina"=>"Manejo de Resíduos - Página Inicial",
             
             "texto_post1" => 
             "Aos poucos, temos percebido na mídia e nas redes sociais um aumento no comprometimento da sociedade, das empresas e das instituições em relação à preocupação com o meio ambiente. O crescimento populacional está diretamente ligado a esta manifestação, em que a urbanização traz consigo a geração desenfreada de resíduos. Com a tecnologia e o avanço da construção civil e da indústria farmacêutica, por exemplo, podemos observar uma mudança significativa nas composições, características e aumento da periculosidade dos resíduos sólidos utilizados nos cursos universitários. Este crescimento reflete a evolução dos padrões de consumo da população e a forma como são destinados os resíduos gerados nas universidades.",
@@ -41,12 +42,26 @@ $mensIndex = [
 
 // Publicar.php -- por página
 $mensPublicar = [
-        "nome_pagina" => "Manejo de Resíduos - Publicar"
+        "titulo_pagina" => "Manejo de Resíduos - Publicar",
+        "sub-titulo_pagina" => "Informações da postagem",
+        "imagem_post"=> "Selecionar imagem",
+        "titulo_post"=> "Título",
+        "texto_post"=> "Texto",
+        "autor_post"=> "Autor",
+        "data_post"=> "Data",
+        "email_post"=> "Email",
+        "bt_salvar"=> "Salvar",
 ];
 
 // SobreNos.php
 $mensSobreNos = [
-
+    "titulo_pagina" => "Manejo de Residuos - Sobre nós",
+    "titulo_sobre" => "DESENVOLVEDORES",
+    "sobre" => "Somos alunos da instituição de ensino superior FATEC, campus Bragança Paulista (Jornalista Omair Fagundes de Oliveira). 
+    Atualmente nos encontramos no 5º semestre do curso de Análise e Desenvolvimento de Sistemas (em português, esta sigla corresponde à ADS) e estamos fazendo este Projeto Integrador em parceria com nossos colegas do Chile, como forma de evoluirmos nossos conhecimentos e compartilharmos experiências.",
+    "contatos"=> "Contatos: ",
+    "contatoMMSF"=> "Mágila M S Ferreira",
+    "contatoGSB"=> "Gustavo S Bragion",
 ];
 
 // Leia.php

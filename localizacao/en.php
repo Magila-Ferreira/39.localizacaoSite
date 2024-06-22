@@ -5,6 +5,7 @@ $mensNavBar = [
         "home" => "HOME",
         "publicar" => "PUBLISH",
         "sobreNos" => "ABOUT US", 
+        "nome_pagina" => "Waste Management"
 ];
 
 $mensFooter = [
@@ -15,7 +16,7 @@ $mensFooter = [
 $mensIndex = [
             // Colocar em órdem alfabética para não se perder
             "bt_leia-mais"=> "READ MORE",
-            "nome_pagina"=>"Waste management",
+            "titulo_pagina"=>"Waste Management - Home",
             
             "texto_post1" => 
             "Little by little, we have been perceiving in the media and social networks an increase in the commitment of society, companies and institutions in relation to concern for the environment. Population growth is directly linked to this manifestation, in which urbanization brings with it the unbridled generation of waste. With technology and the advancement of civil construction and the pharmaceutical industry, for example, we can observe a significant change in the compositions, characteristics and increase in the hazardousness of solid waste used in university courses. This growth reflects the development of the population's consumption patterns and the way in which the waste generated in universities is disposed of.",
@@ -42,13 +43,26 @@ $mensIndex = [
 
 // Publicar.php
 $mensPublicar = [
-        "nome_pagina" => "Waste management - Publish"
+        "titulo_pagina" => "Waste management - Publish",
+        "sub-titulo_pagina" => "Informations about the post",
+        "imagem_post"=> "Select image",
+        "titulo_post"=> "Title",
+        "texto_post"=> "Text",
+        "autor_post"=> "Author",
+        "data_post"=> "Date",
+        "email_post"=> "Email",
+        "bt_salvar"=> "Save",
     ];
     
 // SobreNos.php
 $mensSobreNos = [
-    
-    ];
+    "titulo_pagina"=> "Waste Management - About us",
+    "titulo_sobre" => "DEVELOPERS",
+    "sobre"=> "We are students of the higher education institution FATEC campus Bragança Paulista (Omair Fagundes de Oliveira). We are currently in the 5th semester of the Systems Analysis and Development course (in portuguese, this acronym stands for ads) and we are doing this integrative project in partnership with Chile as a way to evolve our knowledge and sharing experiences.",
+    "contatos"=> "Contacts: ",
+    "contatoMMSF"=> "Mágila M S Ferreira",
+    "contatoGSB"=> "Gustavo S Bragion",
+];
     
 // Leia.php
 $mensLeia = [

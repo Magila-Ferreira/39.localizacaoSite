@@ -8,7 +8,7 @@ include_once './funcoes/idioma.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $mensIndex["nome_pagina"]; ?></title>
+    <title><?= $mensIndex["titulo_pagina"]; ?></title>
 
     <!-- BootsTrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -50,7 +50,7 @@ include_once './funcoes/idioma.php';
     </header>
 
     <main class="container">
-        <h1 class="logo"><?= $mensIndex["nome_pagina"]?></h1>
+        <h1 class="logo"><?= $mensNavBar["nome_pagina"]?></h1>
 
         <div class="posts">
             <!-- Post 1 -->

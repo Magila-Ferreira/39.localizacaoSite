@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
+<?php include_once '../funcoes/idiomaView.php'; ?>
+
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MdR</title>
+    <title><?= $mensSobreNos["titulo_pagina"] ?></title>
 
     <!-- BootsTrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -32,9 +34,9 @@
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.php"> HOME </a>
-            <a href="publicar.php"> PUBLISH </a>
-            <a href="quemSomos.php"> ABOUT US </a>
+            <a href="../index.php"><?= $mensNavBar["home"] ?></a>
+            <a href="publicar.php"><?= $mensNavBar["publicar"] ?></a>
+            <a href="quemSomos.php"><?= $mensNavBar["sobreNos"] ?></a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->
@@ -51,27 +53,71 @@
     </header>
 
     <main class="container">
-        <h1 class="logo"> WASTE MANAGEMENT</h1>
-        <section class="br">
-            <h4> PORTUGUESE </h4>
-            <h5> 
-                Somos alunos da instituição de ensino superior FATEC, campus Bragança Paulista (Jornalista Omair Fagundes de Oliveira). Atualmente nos encontramos no 5º semestre do curso de Análise e Desenvolvimento de Sistemas (em português, esta sigla corresponde à ADS) e estamos fazendo este Projeto Integrador em parceria com nossos colegas do Chile, como forma de evoluirmos nossos conhecimentos e compartilharmos experiências.
-            </h5>
-        </section>
+        <h1 class="logo"><?= $mensNavBar["nome_pagina"] ?></h1>
 
-        <section class="en">
-            <h4> ENGLISH </h4>
-            <h5>
-                We are students of the higher education institution FATEC campus Bragança Paulista (Omair Fagundes de Oliveira). We are currently in the 5th semester of the Systems Analysis and Development course (in portuguese, this acronym stands for ads) and we are doing this integrative project in partnership with Chile as a way to evolve our knowledge and sharing experiences.
-            </h5>
-        </section>
-
-        <section class="sp">
-            <h4> SPANISH </h4>
-            <h5>
-                Somos estudiantes de la institución de educación superior FATEC campus Bragança Paulista (Omair Fagundes de Oliveira). Actualmente, estamos cursando el 5º semestre del curso de Análisis y Desarrollo de Sistemas (en portugués, este acrónimo significa ads) y estamos haciendo este proyecto integrador en alianza con Chile como una forma de evolucionar nuestra conocimiento e intercambio de experiencias.
-            </h5>
-        </section>
+            <?php 
+                if ($lang == 'pt') { ?>
+                
+                    <section class="br">
+                        <h4> <?=$mensSobreNos["titulo_sobre"]?> </h4>
+                        <h5> 
+                            <?=$mensSobreNos["sobre"]?>
+                        </h5>
+                        <div class="mt-5">
+                            <h4><?=$mensSobreNos["contatos"]?></h4>
+                            
+                            <a class="contato" style="color: #000" href="#">
+                                <?=$mensSobreNos["contatoGSB"]?>
+                            </a>
+                            <br>
+                            <a class="contato" style="color: #000" href="https://www.linkedin.com/in/magilamorgana/">
+                                <?=$mensSobreNos["contatoMMSF"]?>
+                            </a>
+                        </div>
+                    </section>
+            <?php 
+                } else if ($lang == 'es') { 
+            ?>
+                    <section class="sp">
+                        <h4> <?=$mensSobreNos["titulo_sobre"]?> </h4>
+                        <h5>
+                            <?=$mensSobreNos["sobre"]?>
+                        </h5>
+                        <div class="mt-5">
+                            <h4><?=$mensSobreNos["contatos"]?></h4>
+                            
+                            <a class="contato" style="color: #000" href="#">
+                                <?=$mensSobreNos["contatoGSB"]?>
+                            </a>
+                            <br>
+                            <a class="contato" style="color: #000" href="https://www.linkedin.com/in/magilamorgana/">
+                                <?=$mensSobreNos["contatoMMSF"]?>
+                            </a>
+                        </div>
+                    </section>
+            <?php 
+                } else { 
+            ?>
+                    <section class="en">
+                        <h4> <?=$mensSobreNos["titulo_sobre"]?> </h4>
+                        <h5>
+                            <?=$mensSobreNos["sobre"]?>
+                        </h5>
+                        <div class="mt-5">
+                            <h4><?=$mensSobreNos["contatos"]?></h4>
+                            
+                            <a class="contato" style="color: #000" href="#">
+                                <?=$mensSobreNos["contatoGSB"]?>
+                            </a>
+                            <br>
+                            <a class="contato" style="color: #000" href="https://www.linkedin.com/in/magilamorgana/">
+                                <?=$mensSobreNos["contatoMMSF"]?>
+                            </a>
+                        </div>
+                    </section>
+            <?php 
+                } 
+            ?> 
     </main>
 
     <footer class="footer">
