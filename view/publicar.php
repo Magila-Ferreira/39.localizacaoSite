@@ -32,9 +32,9 @@ include_once '../funcoes/idiomaView.php';
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.php"><?= $mensNavBar["home"] ?></a>
-            <a href="publicar.php"><?= $mensNavBar["publicar"]?></a>
-            <a href="sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
+            <a class="menu-navBar" href="../index.php"><?= $mensNavBar["home"] ?></a>
+            <a class="menu-navBar disabled" href="#"><?= $mensNavBar["publicar"]?></a>
+            <a class="menu-navBar" href="sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->

@@ -34,9 +34,9 @@
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.php"><?= $mensNavBar["home"] ?></a>
-            <a href="publicar.php"><?= $mensNavBar["publicar"] ?></a>
-            <a href="quemSomos.php"><?= $mensNavBar["sobreNos"] ?></a>
+            <a class="menu-navBar" href="../index.php"><?= $mensNavBar["home"] ?></a>
+            <a class="menu-navBar" href="publicar.php"><?= $mensNavBar["publicar"] ?></a>
+            <a class="menu-navBar disabled" href="#"><?= $mensNavBar["sobreNos"] ?></a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->

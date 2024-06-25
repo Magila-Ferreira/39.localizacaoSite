@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 
 <?php
+/* Arquivo tradução */
 include_once './funcoes/idioma.php';
+
+/* Arquivos banco de dados */
 include_once './banco/CarregarArquivo.php';
 include_once './banco/Processador.php';
 include_once './banco/ConexaoBD.php';
-?>
 
+$conexao = conexao();
+
+// Matriz Posts
+$sqlPosts = 'select * from post order by cod_post';
+$respostaPosts = $conexao->query($sqlPosts);
+$matrizPosts = $respostaPosts->fetch();
+
+// Matriz Imagens
+$sqlImagens = 'select * from imagem order by cod_imagem';
+$respostaImagens = $conexao->query($sqlImagens);
+$matrizImagens = $respostaImagens->fetch();
+
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -28,14 +43,14 @@ include_once './banco/ConexaoBD.php';
 <body>
     <header class="header">
         <section class="logotipo">
-            <a href="index.php">
+            <a href="#">
                 <img class="logo_green" src="img/8679752_recycle_line_icon (1).png">
             </a>
         </section>
         <aside class="menu">
-            <a href="index.php"><?= $mensNavBar["home"] ?></a>
-            <a href="view/publicar.php"><?= $mensNavBar["publicar"]?></a>
-            <a href="view/sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
+            <a class="menu-navBar disabled" href="#"><?= $mensNavBar["home"] ?></a>
+            <a class="menu-navBar" href="view/publicar.php"><?= $mensNavBar["publicar"]?></a>
+            <a class="menu-navBar" href="view/sobreNos.php"><?= $mensNavBar["sobreNos"]?></a>
         </aside>
 
         <section class="icons">
