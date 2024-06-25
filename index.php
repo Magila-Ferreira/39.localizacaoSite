@@ -2,6 +2,9 @@
 
 <?php
 include_once './funcoes/idioma.php';
+include_once './banco/CarregarArquivo.php';
+include_once './banco/Processador.php';
+include_once './banco/ConexaoBD.php';
 ?>
 
 <html lang="pt-br">
