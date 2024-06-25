@@ -53,10 +53,14 @@ include_once '../funcoes/idiomaView.php';
     <main class="container">
         <h1 class="logo"><?= $mensNavBar["nome_pagina"] ?></h1>
         <form id="publicacao" action="../index.php" method="post">
-            <h5 class="linha"><?= $mensPublicar["sub-titulo_pagina"] ?></h5>
-            <div class="cabeçalho_post">
+
+            <h5 class="sub-titulo"><?= $mensPublicar["sub-titulo_pagina"] ?></h5>
+            <div class="linha"></div>
+            
+            <div class="cabeçalho_post">          
+                
                 <div class="campo_imagem">
-                    <h6 class="imagem_post"> <?= $mensPublicar["imagem_post"] ?> </h6>
+                    <h6 class="imagem_post"><?= $mensPublicar["imagem_post"] ?> </h6>
                     <input id="imagem" name="imagem" type="file">
                 </div>
 

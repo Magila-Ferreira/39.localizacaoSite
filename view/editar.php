@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<!-- TESTE -->
 
+<?php
+include_once '../funcoes/idiomaView.php';
+?>
+
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MdR</title>
+    <title><?= $mensEditar["titulo_pagina"] ?></title>
 
     <!-- BootsTrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -29,9 +32,9 @@
             </a>
         </section>
         <aside class="menu">
-            <a href="../index.php"> HOME </a>
-            <a href="publicar.php"> PUBLISH </a>
-            <a href="quemSomos.php"> WHO WE ARE? </a>
+            <a href="../index.php"><?= $mensNavBar["home"] ?></a>
+            <a href="publicar.php"><?= $mensNavBar["publicar"] ?></a>
+            <a href="sobreNos.php"><?= $mensNavBar["sobreNos"] ?></a>
         </aside>
         <section class="icons">
             <!-- ADICIONAR ICONES DAS MÍDIAS SOCIAIS -->
@@ -48,38 +51,42 @@
     </header>
 
     <main class="container">
-        <h1 class="logo"> Waste management </h1>
+        <h1 class="logo"><?= $mensNavBar["nome_pagina"] ?></h1>
         <form id="publicacao" action="../index.php" method="post">
-            <h5 class="linha pb-3 mb-3"> Informations about the post </h5>
+
+            <h5 class="sub-titulo"><?= $mensPublicar["sub-titulo_pagina"] ?></h5>
+            <div class="linha"></div>   
+
             <div class="cabeçalho_post">
+                
                 <div class="campo_imagem">
-                    <h6 class="imagem_post"> IMAGE </h6>
-                    <input id="imagem" type="file">
+                    <h6 class="imagem_post"><?= $mensPublicar["imagem_post"] ?> </h6>
+                    <input id="imagem" name="imagem" type="file">
                 </div>
 
                 <div class="campo_titulo">
-                    <h6> TITLE </h6>
-                    <input type="text" name="Titulo" id="titulo">
+                    <h6> <?= $mensPublicar["titulo_post"] ?> </h6>
+                    <input type="text" name="titulo" id="titulo">
                 </div>
             </div>
 
             <div class="corpo_post">
-                <h6> TEXT </h6>
-                <textarea id="texto"></textarea>
+                <h6> <?= $mensPublicar["texto_post"] ?> </h6>
+                <textarea id="texto" name="texto"></textarea>
             </div>
 
             <div class="footer_post">
-                <h6> AUTHOR </h6>
-                <input class="autor_post" type="text" name="Autor" id="autor" autocomplete="on">
+                <h6> <?= $mensPublicar["autor_post"] ?> </h6>
+                <input class="autor_post" type="text" name="autor" id="autor" autocomplete="on">
 
-                <h6> DATE </h6>
-                <input class="data_post" type="text" name="Data" id="data" autocomplete="on">
+                <h6> <?= $mensPublicar["data_post"] ?> </h6>
+                <input class="data_post" type="text" name="data" id="data" autocomplete="on">
 
-                <h6> EMAIL </h6>
-                <input class="email_post" type="text" name="Email" id="email" autocomplete="on">
+                <h6> <?= $mensPublicar["email_post"] ?> </h6>
+                <input class="email_post" type="text" name="email" id="email" autocomplete="on">
 
                 <div class="button_post">
-                    <button type="submit" name="Editar" id="enviar">Editar</button>
+                    <button type="submit" name="Enviar" id="enviar"><?= $mensEditar["bt_editar"] ?></button>
                 </div>
             </div>
         </form>
@@ -87,14 +94,12 @@
     <footer class="footer">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2">Gabriel Álvarez</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2">Gustavo S. Bragion</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2">Gustavo B. Segur</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Ian Pereira</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Jairo Ulloa</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2">Mágila M. S. Ferreira</a></li>
         </ul>
-        <p class="text-center composição">© 2024 Projeto Integrador, FATEC</p>
+        <p class="text-center composição"><?= $mensFooter["copyright"] ?></p>
     </footer>
-    <!-- myJS -->
-    <script src="../script/publicar.js" type="text/script"></script>
 </body>
 </html>

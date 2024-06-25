@@ -54,7 +54,7 @@
 
     <main class="container">
         <h1 class="logo"><?= $mensNavBar["nome_pagina"] ?></h1>
-
+        <div class="sobreNos">
             <?php 
                 if ($lang == 'pt') { ?>
                 
@@ -106,11 +106,11 @@
                         <div class="mt-5">
                             <h4><?=$mensSobreNos["contatos"]?></h4>
                             
-                            <a class="contato" style="color: #000" href="#">
+                            <a class="contato" href="#">
                                 <?=$mensSobreNos["contatoGSB"]?>
                             </a>
                             <br>
-                            <a class="contato" style="color: #000" href="https://www.linkedin.com/in/magilamorgana/">
+                            <a class="contato" href="https://www.linkedin.com/in/magilamorgana/">
                                 <?=$mensSobreNos["contatoMMSF"]?>
                             </a>
                         </div>
@@ -118,6 +118,7 @@
             <?php 
                 } 
             ?> 
+        </div>
     </main>
 
     <footer class="footer">
