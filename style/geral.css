@@ -143,12 +143,15 @@ main {
 
 .texto {
     color: #000;
+    margin-bottom: 20px;
 }
 
 .link_post {
+    text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 1% 1.5%;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .imagem {
@@ -157,6 +160,7 @@ main {
 
 .imagem_post {
     width: 100%;
+    max-height: 250px;
 }
 
 .footer, .nav-link {
