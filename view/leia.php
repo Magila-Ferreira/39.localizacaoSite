@@ -70,18 +70,26 @@
                 <h5 class="data">
                     <?=$mensLeia["data_post"]?>
                 </h5>
-                <p><?=$mensLeia["data"]?></p>
+                <p> 
+                    <?=$matrizPosts[$id][4]?>
+                </p>
 
                 <h5 class="autor">
                     <?=$mensLeia["autor_post"]?>
                 </h5>
-                <p><?=$mensLeia["autor"]?></p>
+                <p>
+                    <?=$matrizPosts[$id][3]?>
+                </p>
 
                 <h5 class="email">
                     <?=$mensLeia["contato_post"]?>
                 </h5>
-                <p><?=$mensLeia["contato"]?></p>
+                <p>
+                <?=$matrizPosts[$id][5]?>
+                </p>
             </div>
+
+            <!--  Continuar -->
             <div class="link_funcionalidades">
                 <a class="editar_publicacao" href="../view/editar.php">
                     <?=$mensLeia["bt_editar"]?>
