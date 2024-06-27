@@ -229,9 +229,16 @@ li {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     main {
         min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .link_funcionalidades {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -280,6 +287,16 @@ li {
     .header {
         padding: 2.5%;
     }
+
+    .logo {
+        font-size: 20px;
+    }
+    .titulo {
+        font-size: 16px;
+    }
+    .texto {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 200px) {
@@ -304,5 +321,15 @@ li {
     h6,
     p {
         font-size: 12px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+    .titulo {
+        font-size: 12px;
+    }
+    .texto {
+        font-size: 10px;
     }
 }

@@ -69,8 +69,7 @@ h5 {
 }
 
 .link_funcionalidades {
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 50px;
 }
 
 .editar_publicacao, .excluir_publicacao {
@@ -84,12 +83,12 @@ h5 {
 }
 
 .editar_publicacao:hover {
-    background-color: #FFCC00;
+    background-color: #fc0;
     color: #000;
 }
 
 .excluir_publicacao:hover {
-    background-color: #EC6433;
+    background-color: #f55;
     color: #000;
 }
 
@@ -113,3 +112,38 @@ h5 {
     padding: 20px;
 }
 
+@media screen and (max-width: 450px) {
+    .link_funcionalidades {
+        display: block;  
+        margin: 30px 0;      
+    }
+    .editar_publicacao, .excluir_publicacao {
+        display: block;
+        margin: 5% 0;
+    }
+    .titulo_postagem,
+    .data,
+    .autor,
+    .email,
+    .titulo_comentarios_salvos,
+    .comentario {
+        font-size: 16px;
+    }
+    .texto, p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .titulo_postagem,
+    .data,
+    .autor,
+    .email,
+    .titulo_comentarios_salvos,
+    h4.comentario {
+        font-size: 12px;
+    }
+    .texto, p {
+        font-size: 10px;
+    }
+}

@@ -24,6 +24,9 @@
     </link>
     <link defer rel="stylesheet" type="text/css" href="../style/leia.css">
     </link>
+
+    <!-- myScript -->
+    <script defer src="../js/ativarFocus.js"></script>
 </head>
 
 <body>
@@ -107,7 +110,7 @@
                 </span>
             </section>
             <div class="comentarios">
-                <h4><?=$mensLeia["comentario"]?></h4>
+                <h4 class="comentario"><?=$mensLeia["comentario"]?></h4>
                 <textarea type="text" class="txtArea_comentario">
                 </textarea>
                 <button onclick="salvarComentario()" id="enviar">
