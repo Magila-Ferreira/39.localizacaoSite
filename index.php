@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 
 <?php
-/* Arquivo tradução */
-include_once './funcoes/idioma.php';
-
-/* Arquivos banco de dados */
-include_once './banco/CarregarArquivo.php';
-include_once './banco/Processador.php';
-include_once './banco/ConexaoBD.php';
-
-$conexao = conexao();
-
-switch ($lang) {
-    case "pt": $sqlPosts = 'select * from post where idioma = "pt" order by cod_post';
-        break;
-    case "es": $sqlPosts = 'select * from post where idioma = "es" order by cod_post';
-        break;
-    default: $sqlPosts = 'select * from post where idioma = "en" order by cod_post';
-}
-
-// Matriz Posts
-/* $sqlPosts = '
-    select * from post 
-    where idioma = "pt" 
-    order by cod_post'; */
-$respostaPosts = $conexao->query($sqlPosts);
-$matrizPosts = $respostaPosts->fetchAll();
-
-// Matriz Imagens
-$sqlImagens = '
-    select * from imagem
-    join post
-    on imagem.cod_imagem = post.fk_cod_imagem 
-    order by cod_post';
-$respostaImagens = $conexao->query($sqlImagens);
-$matrizImagens = $respostaImagens->fetchAll();
-
-for ($linha = 0; $linha < (count($matrizPosts)%6); $linha++) {
-    $textoReduzido[$linha] = (str_split($matrizPosts[$linha][2], "700"));
-};
-
+ob_start();
+// Arquivo define o idioma do post
+include_once './funcoes/definePostIndex.php';
+ob_end_clean();
 ?>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -105,32 +71,19 @@ for ($linha = 0; $linha < (count($matrizPosts)%6); $linha++) {
                             <?= $matrizPosts[$linha][1] ?>
                         </h2>
                         <p class="texto">
-                            <?= $textoReduzido[$linha][0]?>...
+                            <?= $textoReduzido[$linha][0]?>[...]
                         </p>
                         <div>
-                            <a class="link_post" href="view/leia.php"><?= $mensIndex["bt_leia-mais"]?></a>
+                            <a class="link_post" href="view/leia.php?id=<?= $linha ?>"><?= $mensIndex["bt_leia-mais"]?></a>
                         </div>
                     </div>
                     <div class="imagem" id="imagem">
-                        <img class="imagem_post" src="<?= carregarImagem('img/' . $matrizImagens[$linha][1])?>">
+                        <img class="imagem_post" src="<?= carregarImagem('img/' . $matrizImagens[$linha][0])?>">
                     </div>
                 </section>
             <?php
             }
             ?>
-            <!-- POST FIXO -->
-            <section class="postagem">
-                <div class="texto_post" id="post">
-                    <h2 class="titulo"><?= $mensIndex["titulo_post3"] ?></h2>
-                    <p class="texto">
-                    <?= $mensIndex["texto_post3"] ?>
-                    </p>
-                    <a class="link_post" href="./view/leia.php"><?= $mensIndex["bt_leia-mais"] ?></a>
-                </div>
-                <div class="imagem" id="imagem">
-                    <img class="imagem_post" src="img/meioAmbiente.png">
-                </div>
-            </section>
         </div>
     </main>
     <footer class="footer">

@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
 <?php 
-    include_once '../funcoes/idiomaView.php'; 
-
-    include_once '../banco/CarregarArquivo.php';
-    include_once '../banco/Processador.php';
-    include_once '../banco/ConexaoBD.php';
+    ob_start();
+    include_once '../funcoes/definePostLeia.php';
+    ob_end_clean();
 ?>
 
 <html lang="pt-br">
@@ -26,10 +24,6 @@
     </link>
     <link defer rel="stylesheet" type="text/css" href="../style/leia.css">
     </link>
-
-    <!-- myJS -->
-    <script defer src="../script/comentario.js"></script>
-
 </head>
 
 <body>
@@ -62,19 +56,14 @@
         <h1 class="logo"><?=$mensNavBar["nome_pagina"]?></h1>
 
         <div class="posts">
-            <h2 class="titulo_postagem"><?=$mensLeia["titulo_post"]?></h2>
+            <h2 class="titulo_postagem">
+                <?=$matrizPosts[$id][1]?>
+            </h2>
 
-            <img class="imagem_post" src="../img/reciclagem.png">
+            <img class="imagem_post" src="<?= carregarImagem('../img/' . $matrizImagens[$id][0])?>">
 
             <p class="texto">
-                <?=$mensLeia["texto_post_parte1"]?>
-            </p>
-
-            <h4 class="sub_titulo_postagem">
-            <?=$mensLeia["sub-titulo_post"]?>
-            </h4>
-            <p class="texto">
-                <?=$mensLeia["texto_post_parte2"]?>
+                <?=$matrizPosts[$id][2]?>
             </p>
 
             <div class="referencias">
