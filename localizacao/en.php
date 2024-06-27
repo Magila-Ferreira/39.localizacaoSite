@@ -18,24 +18,6 @@ $mensIndex = [
     "bt_leia-mais" => "READ MORE",
     "titulo_pagina" => "Waste Management - Home",
 
-    "texto_post1" =>
-        "Little by little, we have been perceiving in the media and social networks an increase in the commitment of society, companies and institutions in relation to concern for the environment. Population growth is directly linked to this manifestation, in which urbanization brings with it the unbridled generation of waste. With technology and the advancement of civil construction and the pharmaceutical industry, for example, we can observe a significant change in the compositions, characteristics and increase in the hazardousness of solid waste used in university courses. This growth reflects the development of the population's consumption patterns and the way in which the waste generated in universities is disposed of.",
-
-    "texto_post2" =>
-        "By definition in the dictionary, residue is what is left of something. Solid waste, on the other hand, includes household waste, garbage generated in public and commercial facilities, as well as the part left over from construction and demolition. In other words, it is everything that has not been used in human activities, produced by industries, businesses and homes. As the largest populations are located in metropolitan cities, the major concern is the management of urban solid waste (MSW). In Brazil, the region with the highest generation of urban waste is the Southeast, with about 111 thousand tons per day (approximately 50% of the country's generation), while the smallest is the Midwest, which represents just over 7% of the total generated, with about 6 million tons/year, according to the Brazilian Association of Public Cleaning and Special Waste Companies (Abrelpe).",
-
-    "texto_post3" =>
-        "The name itself indicates that the leftovers that arise during the production of things should be managed. In other words, management encourages the adoption of planned and effective measures to minimize environmental, financial and social damage. All economic activities generate some type of waste, especially solids. This occurs during the various stages of the processes, so waste management involves the stages of collection, transportation, transshipment, treatment, destination, and final disposal. Brazil's legislation that dictates how proper waste management should be is the National Solid Waste Policy. If you are curious, you can consult Law No. 12.305/2010 of the Ministry of the Environment to understand more.",
-
-    "titulo_post1" =>
-        "Text 1 – How to develop waste management in universities?",
-
-    "titulo_post2" =>
-        "Text 2 - Solid waste management, contexts and good pratices.",
-
-    "titulo_post3" =>
-        "Waste management.",
-
     "es" => "Español",
     "en" => "English",
     "pt" => "Português"
