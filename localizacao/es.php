@@ -44,7 +44,7 @@ $mensSobreNos = [
 ];
 
 // Leia.php
-$menLeia = [
+$mensLeia = [
 "titulo_pagina" => "Gestíon de Resíduos - leer más",
     "titulo_post" => "TEXTO 1 – ¿Cómo desarrollar la gestión de residuos en las universidades?",
         
