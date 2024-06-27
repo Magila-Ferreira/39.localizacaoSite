@@ -1,5 +1,6 @@
 CREATE DATABASE posts;
 USE posts;
+
 CREATE TABLE imagem (
     cod_imagem INT NOT NULL AUTO_INCREMENT,
     nome_arquivo VARCHAR(100) NOT NULL,
