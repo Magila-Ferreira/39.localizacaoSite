@@ -381,4 +381,23 @@ INSERT INTO post (
  3
 );
  
+INSERT INTO comentario (
+    conteudo, 
+    fk_cod_post
+) VALUES (
+    "Adorei o texto.", 1
+); 
 
+INSERT INTO comentario (
+    conteudo, 
+    fk_cod_post
+) VALUES (
+    "Show", 3
+);
+
+INSERT INTO comentario (
+    conteudo, 
+    fk_cod_post
+) VALUES (
+    "Valews pela informação!!!", 3
+);

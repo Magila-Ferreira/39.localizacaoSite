@@ -17,4 +17,11 @@ CREATE TABLE post (
     FOREIGN KEY (fk_cod_imagem) REFERENCES imagem (cod_imagem),
     PRIMARY KEY (cod_post)
 );
+CREATE TABLE comentario (
+    cod_comentario INT NOT NULL AUTO_INCREMENT,
+    conteudo VARCHAR(500) NOT NULL,
+    fk_cod_post INT NOT NULL,
+    FOREIGN KEY (fk_cod_post) REFERENCES post (cod_post),
+    PRIMARY KEY (cod_comentario)
+);
 

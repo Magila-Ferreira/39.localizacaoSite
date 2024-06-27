@@ -2,7 +2,7 @@
 
 <?php 
     ob_start();
-    include_once '../funcoes/definePostLeia.php';
+    include_once '../funcoes/leia.php';
     ob_end_clean();
 ?>
 
@@ -27,6 +27,7 @@
 
     <!-- myScript -->
     <script defer src="../js/ativarFocus.js"></script>
+    <script defer src="../js/comentario.js"></script>
 </head>
 
 <body>
@@ -105,8 +106,17 @@
                 <h4 class="titulo_comentarios_salvos">
                     <?=$mensLeia["comentar"]?>
                 </h4>
-                <span class="comentarios_salvos">
-
+                <?php 
+                    for ($linha = 0; $linha < count($matrizComentarios); $linha++) {
+                ?>
+                <span                     class="comentarios_salvos">
+                    <p class="texto_comentario">
+                        <?= $matrizComentarios[$linha][0] ?>
+                    </p>
+                </span>
+                <?php            
+                    }   
+                ?>
                 </span>
             </section>
             <div class="comentarios">

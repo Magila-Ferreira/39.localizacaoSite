@@ -1,6 +1,6 @@
 <?php
 
-include_once '../funcoes/idiomaView.php'; 
+include_once '../funcoes/idiomaView.php';
 
 include_once '../banco/CarregarArquivo.php';
 include_once '../banco/Processador.php';
@@ -33,4 +33,12 @@ $sqlImagens = '
 $respostaImagens = $conexao->query($sqlImagens);
 $matrizImagens = $respostaImagens->fetchAll();
 
+// Matriz Comentarios
+$sqlComentarios = '
+    select conteudo from comentario
+    where fk_cod_post = "' . $id + 1 . '"
+    order by cod_comentario desc';
+
+$respostaComentarios = $conexao->query($sqlComentarios);
+$matrizComentarios = $respostaComentarios->fetchAll();
 ?>;
