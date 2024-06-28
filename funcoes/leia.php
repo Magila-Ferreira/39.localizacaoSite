@@ -34,9 +34,11 @@ $respostaImagens = $conexao->query($sqlImagens);
 $matrizImagens = $respostaImagens->fetchAll();
 
 // Matriz Comentarios
+$idPost = $id + 1;
+
 $sqlComentarios = '
     select conteudo from comentario
-    where fk_cod_post = "' . $id + 1 . '"
+    where fk_cod_post = "' . $idPost . '"
     order by cod_comentario desc';
 
 $respostaComentarios = $conexao->query($sqlComentarios);
