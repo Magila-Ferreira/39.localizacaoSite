@@ -2,6 +2,22 @@
 
 <?php
 include_once '../funcoes/idiomaView.php';
+
+$user = "root";
+    $senha = "";
+    $dns = "mysql:host=localhost;dbname=posts";
+
+    $conexao = new PDO($dns, $user, $senha);
+    $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $titulo = $_POST['titulo'];
+    $texto = $_POST['texto'];
+    $autor = $_POST['autor'];
+    $data = $_POST['data'];
+    $email = $_POST['email'];
+
+    $conexao->query("UPDATE post SET 'titulo = $titulo','texto = $texto','autor = $autor', 'data = $data', 
+    'email = $email'");
 ?>
 
 <html lang="pt-br">
